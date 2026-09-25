@@ -1,5 +1,7 @@
-from fastapi import FastApi
-app=FastApi()
+from fastapi import FastAPI
+app=FastAPI()
 @app.get("/")
 def root():
-    return "surya"
+    return{
+        "message":"main file is running"
+    }
